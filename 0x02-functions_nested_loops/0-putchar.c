@@ -1,9 +1,9 @@
 #include <unistd.h>
 /**
  * _putchar - writes "_putchar"
- * Return: Always 0
+ * Return: on success 1.
  */
-int _putchar(char _putchar)
+int _putchar(char c)
 {
-	return (_putchar);
+	return (write(1, &c, 1));
 }
