@@ -5,5 +5,5 @@
  */
 int _putchar(char _putchar)
 {
-	return (write(_putchar);
+	return (_putchar);
 }
