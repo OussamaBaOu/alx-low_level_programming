@@ -5,7 +5,7 @@
  * Return: Function
  */
 int _sqrt_recursion(int n)
-	int i
+	int i;
 
 {
 	if (i * i > n)
