@@ -5,7 +5,6 @@
  * Return: Function
  */
 int _sqrt_recursion(int n)
-int actual_sqrt_recursion(int n, int i)
 {
 	if (n < 0)
 		return (-1);
