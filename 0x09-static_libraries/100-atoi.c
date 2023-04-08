@@ -1,16 +1,13 @@
 #include "main.h"
 /**
- * _atoi - prints a string
- * @s: string to print
+ * _isupper - uppercase letters.
+ * @c: char to check.
+ * Return: 0 or 1
  */
 int _atoi(char *s)
 {
-	{
-	while (*s != '\0')
-	{
-		_putchar(*s++);
-	}
-	_putchar('\n')
-	}
-	return (void)
+	if (*s >= 'A' && *s <= 'Z')
+		return (1);
+	else
+		return (0);
 }
