@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * _atoi - computes the absolute value of an integer
- * @r: the int to check
- * Return: the absolute value of int
+ * _atoi - prints a string
+ * @s: string to print
  */
 int _atoi(char *s)
 {
-	if (s >= 0)
 	{
-		return (*s);
+	while (*s != '\0')
+	{
+		_putchar(*s++);
 	}
-	return (*s);
+	_putchar('\n')
+	}
+	return (void)
 }
