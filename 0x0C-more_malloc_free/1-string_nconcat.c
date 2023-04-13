@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * *string_nconcat - concatenates two strings
- * @s1: string to append 
+ * @s1: string to append
  * @s2: string to concatenate
  * @n: number of bytes
  * Return: pointer
