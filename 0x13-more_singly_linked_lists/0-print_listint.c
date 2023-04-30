@@ -1,23 +1,20 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - prints all the elements of a list_t list
+ * print_listint - prints all the elements of a listint_t list
  * @h: pointer to the list_t list to print
  * Return: the number of nodes printed
  */
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t s;
 
 	s = 0;
 	while (h)
 	{
-		if (!h->str)
-			printf("Error\n");
-		else
-			printf("[%u] %s\n", h->len, h->str);
-		h = h->next;
+		printf("%d\n", h->n);
 		s++;
+		h = h->next;
 	}
 	return (s);
 }
