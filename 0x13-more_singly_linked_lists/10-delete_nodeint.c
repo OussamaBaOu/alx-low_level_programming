@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
  * delete_nodeint_at_index - deletes a node at index of a linked list
  * @head: pointer to the first element
