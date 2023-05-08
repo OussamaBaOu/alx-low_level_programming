@@ -1,8 +1,10 @@
 #include "main.h"
+
 char *crate_buff(char *file);
 void close_f(int fd);
+
 /**
- * create_buffer - creates 1024 bytes for buffer
+ * crate_buff - creates 1024 bytes for buffer
  * @file: name of the file
  * Return: pointer to buffer
  */
