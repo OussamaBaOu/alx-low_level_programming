@@ -66,7 +66,7 @@ int cp_file(int argc, char *argv[])
 			exit(98);
 		}
 		w = write(b, buff, r);
-		if (to == -1 || w == -1)
+		if (b == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
