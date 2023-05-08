@@ -1,6 +1,5 @@
 #include "main.h"
-char *create_buff(char *file);
-void close_f(int fd);
+
 /**
  * create_buff - creates 1024 bytes for buffer
  * @file: name of the file
@@ -66,7 +65,7 @@ int cp_file(int argc, char *argv[])
 			free(buff);
 			exit(98);
 		}
-		w = write(to, buff, r);
+		w = write(b, buff, r);
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
