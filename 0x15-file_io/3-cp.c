@@ -77,7 +77,7 @@ int cp_file(int argc, char *argv[])
 		b = open(argv[2], O_WRONLY | O_APPEND);
 	} while (r > 0);
 	free(buff);
-	close_file(a);
-	close_file(b);
+	close_f(a);
+	close_f(b);
 	return (0);
 }
