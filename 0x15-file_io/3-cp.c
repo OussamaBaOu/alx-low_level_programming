@@ -35,12 +35,12 @@ void close_f(int fd)
 	}
 }
 /**
- * cp_file - copies the contents of a file to another file.
+ * main - copies the contents of a file to another file.
  * @argc: number of arguments.
  * @argv: array of pointers to the arguments.
  * Return: 0 (success)
  */
-int cp_file(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int b;
