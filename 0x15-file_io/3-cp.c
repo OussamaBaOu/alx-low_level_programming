@@ -1,14 +1,11 @@
 #include "main.h"
 
-char *crate_buff(char *file);
-void close_f(int fd);
-
 /**
- * crate_buff - creates 1024 bytes for buffer
+ * create_buff - creates 1024 bytes for buffer
  * @file: name of the file
  * Return: pointer to buffer
  */
-char *crate_buff(char *file)
+char *create_buff(char *file)
 {
 	char *buff;
 
@@ -56,7 +53,7 @@ int cp_file(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	buff = crate_buff(argv[2]);
+	buff = create_buff(argv[2]);
 	a = open(argv[1], O_RDONLY);
 	r = read(a, buff, 1024);
 	b = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
