@@ -1,0 +1,53 @@
+#include "lists.h"
+
+/**
+ * insert_dnodeint_at_index - inserts a new node at a given position.
+ * @head: pointer
+ * @idx: Index starts at 0
+ * @n: value
+ * Return: new node or NULL
+ **/
+
+dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+{
+	dlistint_t *a, *b, *d;
+	unsigned int c;
+
+	if (head == NULL && idx > 0)
+		return (NULL);
+	d = malloc(sizeof(dlistint_t));
+	if (d == NULL)
+		return (NULL);
+	d->n = n, d->prev = d->next = NULL;
+	if (idx == 0)
+	{
+		if (*head)
+		{
+			d->next = *head;
+			(*head)->prev = d, *head = d;
+		}
+		else
+			*head = d;
+		return (d);
+	}
+	c = 1, a = (*head)->next;
+	while (a)
+	{
+		if (idx == c)
+		{
+			a->prev->next = d, d->prev = a->prev;
+			d->next = a, a->prev = d;
+			return (d);
+		}
+		c++;
+		b = a;
+		a = a->next;
+	}
+	if (a == NULL && c == idx)
+	{
+		b->next = d, d->prev = b;
+		return (d);
+	}
+	free(d);
+	return (NULL);
+}
