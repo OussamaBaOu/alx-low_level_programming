@@ -9,9 +9,9 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int b;
 	unsigned char c;
 
-        c = 0
+	c = 0
 	if (ht == NULL)
-                return;
+		return;
 	printf("{");
 	for (b = 0; b < ht->size; b++)
 	{
