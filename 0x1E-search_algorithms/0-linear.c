@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
-* Searches for a value in an array of integers
-* array = pointer to first element
-* size = number of elements
-* value = value
+* linear_search - Searches for a value in an array of integers
+* @array: pointer to first element
+* @size: number of elements
+* @value: value
 * Return: first index or -1
 **/
 
